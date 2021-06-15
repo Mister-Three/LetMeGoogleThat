@@ -2,9 +2,9 @@ import pyperclip as pc
 import webbrowser
 import time
 lmgt = input("Input the Let Me Google That Phrase: \n")
-lmgt.replace(" ", "+")
+lmgt.replace("", "+")
 link = ('https://letmegooglethat.com/?q=' + lmgt)
-ask = input("Would you like to open the Let Me Google That link? \n")
+ask = input("Would you like to open the Let Me Google That link?[Y/N]: ")
 if ask.lower() in ['yes', 'y']:
     webbrowser.open(link)
     print("Link has been opened...")
